@@ -1,0 +1,41 @@
+You are RAG AI expert,  you need to write a RAG AI program with using chroma database.
+
+Such system can be used to study md file or pdf file.
+
+ragstudy.py should has a ragstudy class.
+
+ragcontrol.py should has a ragcontrol class.
+
+ragcontrol is used to study the md file or pdf file and extract the control in chunk import into chroma database.
+
+when ragcontrol study other md or pdf file will not replace other md or pdf file content of chroma database.
+
+
+
+ragstudy.py need to import the ragcontrol class.
+
+ragstudy.py accept argurments input and then call the ragcontrol class to study md or pdf file.
+
+
+
+ragquery.py need to import the ragcontrol class.
+
+ragquery.py accept argurments input and then call the ragcontrol class to search data from specific  md or pdf conent of chroma database.
+
+all ragcontrol.py,ragstudy.py, and ragquery.py need to be professional OOP design and add many error  checking /logging as much as you can.
+
+
+please use below command to active the python virtual enviroment.
+
+source .venv/bin/activate
+
+
+please use below command to study or  the md or pdf file 
+
+python ragstudy.py md alice_in_wonderland.md 
+
+
+please use below command to query the specific  md or pdf. For instance.
+
+python ragquery.py alice_in_wonderland "Please tell me about Alice".
+

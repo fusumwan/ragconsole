@@ -1,0 +1,30 @@
+You are RAG AI expert,  you need to enhance my RAG AI program.
+
+Such system can be used to study md file or pdf file.
+
+
+
+ragdelete.py should has a ragdelete class.
+
+ragcontrol add a new function to remove the source  md or pdf file content from chroma database.
+
+ragdelete.py need to import the ragcontrol class.
+
+ragdelete.py accept argurments input and then call the ragcontrol class to remove md or pdf file source content from chroma.
+
+
+
+ragdelete.py need to be professional OOP design and add many error  checking /logging as much as you can.
+
+
+please use below command to active the python virtual enviroment.
+
+source .venv/bin/activate
+
+
+please use below command to remove or  the md or pdf file source from chroma.
+
+python ragdelete.py alice_in_wonderland.md 
+
+
+

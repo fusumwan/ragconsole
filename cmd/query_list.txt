@@ -1,0 +1,59 @@
+python ragstudy.py md alice_in_wonderland.md
+
+
+python ragquery.py "Tell me about the Queen" --filter alice_in_wonderland.md
+
+
+python ragquery.py --list
+
+
+# Basic usage (with confirmation)
+python ragdelete.py alice_in_wonderland.md
+
+# Force deletion without confirmation
+python ragdelete.py document.pdf --force
+
+# List all documents in database
+python ragdelete.py --list
+
+# Show database statistics
+python ragdelete.py --stats
+
+# Multiple file deletion
+python ragdelete.py file1.md file2.pdf --force
+
+# Verbose output for debugging
+python ragdelete.py document.md --verbose --log-level DEBUG
+
+
+- Works correctly with empty database
+python ragquery.py --list 
+
+
+- Works correctly with empty database
+python ragquery.py --stats
+
+- Works correctly with empty database
+python ragquery.py --interactive
+
+
+python ragquery.py --list && python ragquery.py --stats
+
+
+Excellent! Let me also test the interactive mode to make sure it works:
+
+echo -e "list\nquit" | python ragquery.py --interactive
+
+============================
+
+python ragstudy.py md alice_in_wonderland.md
+
+
+python ragquery.py "Tell me about the Queen" --filter alice_in_wonderland.md
+
+
+python ragquery.py --list
+
+
+python ragdelete.py alice_in_wonderland.md
+

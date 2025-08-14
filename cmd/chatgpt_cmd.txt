@@ -4,25 +4,25 @@ Such system can be used to study md file or pdf file.
 
 ragstudy.py should has a ragstudy class.
 
-ragcontrol.py should has a ragcontrol class.
+RAGService.py should has a RAGService class.
 
-ragcontrol is used to study the md file or pdf file and extract the control in chunk import into chroma database.
+RAGService is used to study the md file or pdf file and extract the control in chunk import into chroma database.
 
-when ragcontrol study other md or pdf file will not replace other md or pdf file content of chroma database.
-
-
-
-ragstudy.py need to import the ragcontrol class.
-
-ragstudy.py accept argurments input and then call the ragcontrol class to study md or pdf file.
+when RAGService study other md or pdf file will not replace other md or pdf file content of chroma database.
 
 
 
-ragquery.py need to import the ragcontrol class.
+ragstudy.py need to import the RAGService class.
 
-ragquery.py accept argurments input and then call the ragcontrol class to search data from specific  md or pdf conent of chroma database.
+ragstudy.py accept argurments input and then call the RAGService class to study md or pdf file.
 
-all ragcontrol.py,ragstudy.py, and ragquery.py need to be professional OOP design and add many error  checking /logging as much as you can.
+
+
+ragquery.py need to import the RAGService class.
+
+ragquery.py accept argurments input and then call the RAGService class to search data from specific  md or pdf conent of chroma database.
+
+all RAGService.py,ragstudy.py, and ragquery.py need to be professional OOP design and add many error  checking /logging as much as you can.
 
 
 please use below command to active the python virtual enviroment.

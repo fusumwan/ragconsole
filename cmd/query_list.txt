@@ -57,3 +57,28 @@ python ragquery.py --list
 
 python ragdelete.py alice_in_wonderland.md
 
+================new updated========
+
+
+python ragdelete.py alice_in_wonderland.md
+
+# Sentence-Transformers (local)
+python ragstudy.py Sentence-Transformers md alice_in_wonderland.md
+
+# OpenAI (cloud) — make sure OPENAI_API_KEY is set
+python ragstudy.py OpenAIEmbeddings md alice_in_wonderland.md
+
+# Query the same embedding/collection
+python ragquery.py "rabbit hole" --embedding Sentence-Transformers
+python ragquery.py "rabbit hole" --embedding OpenAIEmbeddings
+
+
+
+
+
+
+python ragstudy.py Sentence-Transformers md alice_in_wonderland.md
+python ragstudy.py OpenAIEmbeddings md alice_in_wonderland.md
+
+
+

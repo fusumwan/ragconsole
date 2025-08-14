@@ -18,8 +18,8 @@ from pathlib import Path
 from datetime import datetime
 import traceback
 
-# Import the RAGControl class
-from ragcontrol import RAGControl
+# Import the RAGService class
+from ragcontrolservice import RAGService
 
 
 class RAGDelete:
@@ -44,8 +44,8 @@ class RAGDelete:
         self.logger = logging.getLogger(__name__)
         
         try:
-            # Initialize RAGControl instance
-            self.rag_control = RAGControl(db_path=db_path)
+            # Initialize RAGService instance
+            self.rag_control = RAGService(db_path=db_path)
             self.logger.info(f"RAGDelete initialized successfully with database at {db_path}")
             
         except Exception as e:
@@ -237,7 +237,7 @@ class RAGDelete:
                         "timestamp": datetime.now().isoformat()
                     }
             
-            # Perform deletion using RAGControl
+            # Perform deletion using RAGService
             deletion_result = self.rag_control.delete_document_by_file_path(validated_path)
             
             if deletion_result["status"] == "success":

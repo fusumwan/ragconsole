@@ -1,0 +1,94 @@
+`RAGControlService` saves **chunked** text into Chroma, and what each step is doing. I’ll point to the methods in  class.
+
+# What happens when you call `study_document(...)`
+
+1. **Log + validate**
+
+* `study_document(file_path, file_type)` starts and checks the file exists.
+* Generates a stable **document\_id** from the absolute file path:
+  `_generate_document_id → "doc_<md5(abs_path)>"`.
+
+2. **Duplicate guard**
+
+* `_check_document_exists(document_id)` does a `.get(where={"document_id": ...})`.
+  If found, it returns `status="exists"` so you don’t re-ingest duplicates.
+
+3. **Read file content**
+
+* If `file_type == "md"` → `_read_markdown_file`.
+* If `file_type == "pdf"` → `_read_pdf_file` (using pdfplumber, concatenates page text and tags pages like `--- Page 1 ---`).
+
+4. **Chunking**
+
+* `_chunk_text(content, chunk_size=1000, overlap=200)`:
+
+  * Normalizes whitespace.
+  * Walks the text window by window (1,000 chars) with **200-char overlap**.
+  * Tries to end a chunk at a sentence boundary (`. ! ? \n`) if the boundary is after \~70% of the window, to keep chunks semantically tidy.
+  * Returns a list like: `["chunk0 text...", "chunk1 text...", ...]`.
+
+5. **Prepare IDs + metadata**
+
+* Builds **chunk IDs**: `[f"{document_id}_chunk_{i}" for i in range(len(chunks))]`.
+* Builds **metadatas** (one per chunk):
+
+  ```python
+  {
+    "document_id": document_id,
+    "file_path": file_path,
+    "file_type": file_type,
+    "chunk_index": i,
+    "total_chunks": len(chunks),
+    "timestamp": datetime.now().isoformat()
+  }
+  ```
+
+6. **Add to Chroma**
+
+* You need to choose one of embedding which are "Sentence-Transformers" or "OpenAIEmbeddings", if you choose "Sentence-Transformers" then you need to use all-MiniLM-L6-v2 model, but if you choose "OpenAIEmbeddings" you need to use open ai key.
+* Calls `self.collection.add(documents=chunks, ids=chunk_ids, metadatas=metadatas)`.
+
+
+  Chroma **auto-embeds** each `documents[i]` using that model before storing vectors + metadata.
+
+7. **Return summary**
+
+* Returns a dict with `status="success"`, the `document_id`, `chunks_count`, etc.
+
+# Minimal usage example
+
+```python
+svc = RAGControlService(db_path="./chroma_db")
+
+# Markdown
+resp = svc.study_document("notes.md", file_type="md")
+print(resp)
+# {'status': 'success', 'document_id': 'doc_xxx', 'chunks_count': N, ...}
+
+# PDF
+resp = svc.study_document("paper.pdf", file_type="pdf")
+print(resp)
+```
+
+# How the overlap & chunk size affect retrieval
+
+* **chunk\_size** ≈ how much context sits in each vector. Larger helps recall but can blur specificity and increase storage.
+* **overlap** ensures cross-sentence context carries over so answers aren’t cut at boundaries. Too large → duplication; too small → lost context.
+
+# Common tweaks (drop-in)
+
+* Change default chunking without touching call sites:
+
+  ```python
+  # inside study_document(...)
+  chunks = self._chunk_text(content, chunk_size=1200, overlap=250)
+  ```
+* Add **page number** to metadata for PDFs:
+
+  * In `_read_pdf_file`, when you build the `content`, also keep a parallel list of `(page_num, page_text_spans)` or, easier, mark pages in the text and detect page label during chunking (e.g., split by `--- Page X ---` first, then chunk per page and store `page_num` in metadata).
+* Prevent re-adding the *same* physical file after edits:
+
+  * Extend `_generate_document_id` to hash **file contents** (e.g., MD5 of file bytes) rather than just the path, or store a content hash in metadata and check it in `_check_document_exists`.
+
+
+

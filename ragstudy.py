@@ -1,285 +1,181 @@
-#!/usr/bin/env python3
-"""
-RAG Study Module
-Provides functionality to study and store documents (markdown/PDF) in ChromaDB database.
-"""
+# ragstudy.py
+# ------------------------------------------------------------------------------
+# CLI to ingest (study) a document into Chroma with a chosen embedding method.
+# Usage examples:
+#   python ragstudy.py Sentence-Transformers md alice_in_wonderland.md
+#   python ragstudy.py OpenAIEmbeddings   md alice_in_wonderland.md
+# ------------------------------------------------------------------------------
 
-import sys
-import os
 import argparse
+import json
 import logging
+import os
+import sys
 from typing import Optional
-from pathlib import Path
 
-# Import the RAGControl class
-from ragcontrol import RAGControl
+# Your service with pluggable embeddings
+from ragcontrolservice import RAGService
 
 
 class RAGStudy:
-    """
-    RAG Study class for processing and storing documents in the RAG system.
-    Provides command-line interface and comprehensive error handling.
-    """
-    
     def __init__(self):
-        """Initialize RAGStudy with logging setup."""
-        self.setup_logging()
-        self.logger = logging.getLogger(__name__)
-        self.rag_control = None
-    
-    def setup_logging(self):
-        """Setup logging configuration for RAGStudy."""
-        logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-            handlers=[
-                logging.FileHandler('rag_study.log'),
-                logging.StreamHandler(sys.stdout)
-            ]
-        )
-    
-    def initialize_rag_control(self, db_path: str = "./chroma_db") -> bool:
+        self.logger = logging.getLogger(self.__class__.__name__)
+        self.rag_control: Optional[RAGService] = None
+
+    def initialize_rag_control(
+        self,
+        db_path: str = "./chroma_db",
+        embedding_method: str = "Sentence-Transformers",
+        sentence_model_name: str = "all-MiniLM-L6-v2",
+        openai_model_name: str = "text-embedding-3-small",
+        openai_api_key: Optional[str] = None,
+    ) -> bool:
         """
-        Initialize the RAGControl instance.
-        
-        Args:
-            db_path (str): Path to ChromaDB database directory
-            
-        Returns:
-            bool: True if initialization successful, False otherwise
+        Initialize the RAG service with the selected embedding method.
         """
         try:
-            self.logger.info(f"Initializing RAGControl with database path: {db_path}")
-            self.rag_control = RAGControl(db_path=db_path)
-            self.logger.info("RAGControl initialized successfully")
+            self.logger.info(
+                f"Initializing RAGService at '{db_path}' with embedding '{embedding_method}'"
+            )
+            self.rag_control = RAGService(
+                db_path=db_path,
+                embedding_method=embedding_method,
+                sentence_model_name=sentence_model_name,
+                openai_model_name=openai_model_name,
+                openai_api_key=openai_api_key,  # if None, service will read from env
+            )
             return True
         except Exception as e:
-            self.logger.error(f"Failed to initialize RAGControl: {str(e)}")
+            self.logger.error(f"Failed to initialize RAGService: {str(e)}")
             return False
-    
-    def validate_file(self, file_path: str, file_type: str) -> bool:
+
+    def study_document(self, file_path: str, file_type: str) -> dict:
         """
-        Validate that the file exists and is of the correct type.
-        
-        Args:
-            file_path (str): Path to the file
-            file_type (str): Expected file type ('md' or 'pdf')
-            
-        Returns:
-            bool: True if file is valid, False otherwise
+        Ingest the document into Chroma (chunk -> embed -> store).
         """
-        try:
-            # Check if file exists
-            if not os.path.exists(file_path):
-                self.logger.error(f"File not found: {file_path}")
-                return False
-            
-            # Check file extension
-            file_ext = Path(file_path).suffix.lower()
-            if file_type.lower() == "md" and file_ext not in ['.md', '.markdown']:
-                self.logger.error(f"File {file_path} does not have markdown extension")
-                return False
-            elif file_type.lower() == "pdf" and file_ext != '.pdf':
-                self.logger.error(f"File {file_path} does not have PDF extension")
-                return False
-            
-            # Check if file is readable
-            try:
-                with open(file_path, 'r', encoding='utf-8') as f:
-                    if file_type.lower() == "md":
-                        f.read(1024)  # Read a small sample
-            except UnicodeDecodeError:
-                # For PDF files, we don't need to check encoding
-                if file_type.lower() == "md":
-                    self.logger.error(f"File {file_path} is not readable as text")
-                    return False
-            
-            self.logger.info(f"File validation successful: {file_path}")
-            return True
-            
-        except Exception as e:
-            self.logger.error(f"File validation failed for {file_path}: {str(e)}")
-            return False
-    
-    def study_document(self, file_path: str, file_type: str) -> bool:
-        """
-        Study and store a document using RAGControl.
-        
-        Args:
-            file_path (str): Path to the document file
-            file_type (str): Type of file ('md' or 'pdf')
-            
-        Returns:
-            bool: True if study successful, False otherwise
-        """
-        try:
-            if not self.rag_control:
-                self.logger.error("RAGControl not initialized")
-                return False
-            
-            # Validate file
-            if not self.validate_file(file_path, file_type):
-                return False
-            
-            # Study the document
-            result = self.rag_control.study_document(file_path, file_type)
-            
-            # Print results
-            if result['status'] == 'success':
-                print(f"✅ Successfully studied document: {file_path}")
-                print(f"   📄 Document ID: {result['document_id']}")
-                print(f"   📊 Chunks created: {result['chunks_count']}")
-                print(f"   📁 File type: {result['file_type']}")
-                print(f"   💾 Message: {result['message']}")
-                return True
-            elif result['status'] == 'exists':
-                print(f"ℹ️  Document already exists: {file_path}")
-                print(f"   📄 Document ID: {result['document_id']}")
-                print(f"   💾 Message: {result['message']}")
-                return True
-            else:
-                self.logger.error(f"Study failed with status: {result.get('status', 'unknown')}")
-                return False
-                
-        except Exception as e:
-            self.logger.error(f"Failed to study document {file_path}: {str(e)}")
-            print(f"❌ Error studying document: {str(e)}")
-            return False
-    
-    def print_database_stats(self):
-        """Print current database statistics."""
-        try:
-            if not self.rag_control:
-                print("❌ RAGControl not initialized")
-                return
-            
-            stats = self.rag_control.get_database_stats()
-            print("\n📊 Database Statistics:")
-            print(f"   📄 Total documents: {stats['unique_documents']}")
-            print(f"   📝 Total chunks: {stats['total_chunks']}")
-            print(f"   💾 Total content size: {stats['total_content_size_bytes']:,} bytes")
-            print(f"   🗂️  Database path: {stats['database_path']}")
-            
-        except Exception as e:
-            self.logger.error(f"Failed to get database stats: {str(e)}")
-            print(f"❌ Error getting database stats: {str(e)}")
-    
-    def list_stored_documents(self):
-        """List all documents currently stored in the database."""
-        try:
-            if not self.rag_control:
-                print("❌ RAGControl not initialized")
-                return
-            
-            result = self.rag_control.list_documents()
-            
-            if result['status'] == 'success':
-                print(f"\n📚 Stored Documents ({result['documents_count']}):")
-                for i, doc in enumerate(result['documents'], 1):
-                    print(f"   {i}. {doc['file_path']}")
-                    print(f"      📄 ID: {doc['document_id']}")
-                    print(f"      📊 Chunks: {doc['total_chunks']}")
-                    print(f"      📁 Type: {doc['file_type']}")
-                    print(f"      ⏰ Added: {doc['timestamp']}")
-                    print()
-            else:
-                print("❌ Failed to list documents")
-                
-        except Exception as e:
-            self.logger.error(f"Failed to list documents: {str(e)}")
-            print(f"❌ Error listing documents: {str(e)}")
+        assert self.rag_control is not None, "RAG service not initialized"
+        return self.rag_control.study_document(file_path=file_path, file_type=file_type)
+
+
+def configure_logging(verbosity: int):
+    """
+    Configure logging level based on -v occurrences (0: WARNING, 1: INFO, 2+: DEBUG)
+    """
+    if verbosity <= 0:
+        level = logging.WARNING
+    elif verbosity == 1:
+        level = logging.INFO
+    else:
+        level = logging.DEBUG
+
+    logging.basicConfig(
+        level=level,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        handlers=[logging.StreamHandler(sys.stdout)],
+    )
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        description="RAG Study CLI - Ingest a document into Chroma with a chosen embedding method."
+    )
+
+    # Positional args (match your requested command format)
+    parser.add_argument(
+        "embedding_method",
+        choices=["Sentence-Transformers", "OpenAIEmbeddings"],
+        help="Embedding method to use for indexing the document.",
+    )
+    parser.add_argument(
+        "file_type",
+        choices=["md", "pdf"],
+        help="Type of file to study: 'md' or 'pdf'.",
+    )
+    parser.add_argument(
+        "file_path",
+        help="Path to the file to study.",
+    )
+
+    # Optional args
+    parser.add_argument(
+        "--db",
+        dest="db_path",
+        default="./chroma_db",
+        help="Path to Chroma persistent directory (default: ./chroma_db).",
+    )
+    parser.add_argument(
+        "--openai-api-key",
+        dest="openai_api_key",
+        default=None,
+        help="OpenAI API key (optional; if omitted, will use OPENAI_API_KEY env var).",
+    )
+    parser.add_argument(
+        "--sentence-model",
+        dest="sentence_model_name",
+        default="all-MiniLM-L6-v2",
+        help="Sentence-Transformers model name (default: all-MiniLM-L6-v2).",
+    )
+    parser.add_argument(
+        "--openai-model",
+        dest="openai_model_name",
+        default="text-embedding-3-small",
+        help="OpenAI embedding model (default: text-embedding-3-small).",
+    )
+    parser.add_argument(
+        "-v",
+        dest="verbosity",
+        action="count",
+        default=1,
+        help="Increase logging verbosity (-v: INFO, -vv: DEBUG).",
+    )
+    parser.add_argument(
+        "--json",
+        dest="json_output",
+        action="store_true",
+        help="Print raw JSON result only (no extra text).",
+    )
+
+    return parser
 
 
 def main():
-    """Main function to handle command-line interface."""
-    parser = argparse.ArgumentParser(
-        description="RAG Study - Study and store documents in ChromaDB database",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  python ragstudy.py md alice_in_wonderland.md
-  python ragstudy.py pdf document.pdf
-  python ragstudy.py --list
-  python ragstudy.py --stats
-        """
-    )
-    
-    parser.add_argument(
-        'file_type',
-        nargs='?',
-        choices=['md', 'pdf'],
-        help='Type of file to study (md or pdf)'
-    )
-    
-    parser.add_argument(
-        'file_path',
-        nargs='?',
-        help='Path to the file to study'
-    )
-    
-    parser.add_argument(
-        '--db-path',
-        default='./chroma_db',
-        help='Path to ChromaDB database directory (default: ./chroma_db)'
-    )
-    
-    parser.add_argument(
-        '--list',
-        action='store_true',
-        help='List all stored documents'
-    )
-    
-    parser.add_argument(
-        '--stats',
-        action='store_true',
-        help='Show database statistics'
-    )
-    
-    parser.add_argument(
-        '--verbose',
-        action='store_true',
-        help='Enable verbose logging'
-    )
-    
+    parser = build_parser()
     args = parser.parse_args()
-    
-    # Setup logging level
-    if args.verbose:
-        logging.getLogger().setLevel(logging.DEBUG)
-    
-    # Initialize RAGStudy
+
+    configure_logging(args.verbosity)
+    log = logging.getLogger("ragstudy")
+
+    # Validate file existence early
+    if not os.path.exists(args.file_path):
+        log.error(f"File not found: {args.file_path}")
+        sys.exit(1)
+
+    # Initialize study controller
     rag_study = RAGStudy()
-    
-    # Initialize RAGControl
-    if not rag_study.initialize_rag_control(args.db_path):
-        print("❌ Failed to initialize RAG system")
-        sys.exit(1)
-    
+    ok = rag_study.initialize_rag_control(
+        db_path=args.db_path,
+        embedding_method=args.embedding_method,
+        sentence_model_name=args.sentence_model_name,
+        openai_model_name=args.openai_model_name,
+        openai_api_key=args.openai_api_key,  # service will fall back to env if None
+    )
+    if not ok:
+        log.error("Failed to initialize RAG service.")
+        sys.exit(2)
+
+    # Run study (ingest)
     try:
-        # Handle different command modes
-        if args.list:
-            rag_study.list_stored_documents()
-        elif args.stats:
-            rag_study.print_database_stats()
-        elif args.file_type and args.file_path:
-            # Study a document
-            success = rag_study.study_document(args.file_path, args.file_type)
-            if success:
-                print("\n📊 Current database statistics:")
-                rag_study.print_database_stats()
-            else:
-                sys.exit(1)
+        result = rag_study.study_document(args.file_path, args.file_type)
+        if args.json_output:
+            print(json.dumps(result, ensure_ascii=False, indent=2))
         else:
-            print("❌ Please provide file type and file path, or use --list or --stats")
-            parser.print_help()
-            sys.exit(1)
-            
-    except KeyboardInterrupt:
-        print("\n⚠️  Operation cancelled by user")
-        sys.exit(1)
+            print("\n=== Study Result ===")
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            print("\nTip: use the same embedding when querying this collection.")
+            print(f"Collection: {result.get('collection_name')} | Embedding: {result.get('embedding_method')}")
     except Exception as e:
-        print(f"❌ Unexpected error: {str(e)}")
-        sys.exit(1)
+        log.exception(f"Study failed: {e}")
+        sys.exit(3)
 
 
 if __name__ == "__main__":

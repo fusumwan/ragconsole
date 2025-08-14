@@ -6,11 +6,11 @@ Such system can be used to study md file or pdf file.
 
 ragdelete.py should has a ragdelete class.
 
-ragcontrol add a new function to remove the source  md or pdf file content from chroma database.
+RAGService add a new function to remove the source  md or pdf file content from chroma database.
 
-ragdelete.py need to import the ragcontrol class.
+ragdelete.py need to import the RAGService class.
 
-ragdelete.py accept argurments input and then call the ragcontrol class to remove md or pdf file source content from chroma.
+ragdelete.py accept argurments input and then call the RAGService class to remove md or pdf file source content from chroma.
 
 
 

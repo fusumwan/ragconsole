@@ -1,262 +1,262 @@
-2025-08-08 16:44:26,108 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
-2025-08-08 16:44:26,357 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 16:44:26,358 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 16:44:26,108 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
+2025-08-08 16:44:26,357 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 16:44:26,358 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 16:44:26,358 - __main__ - INFO - Query validation successful: 'Please tell me about Alice'
-2025-08-08 16:44:26,358 - ragcontrol - INFO - Searching documents with query: 'Please tell me about Alice'
-2025-08-08 16:44:27,131 - ragcontrol - INFO - Search completed, found 5 results
-2025-08-08 16:44:37,198 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
-2025-08-08 16:44:37,409 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 16:44:37,410 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 16:44:26,358 - RAGService - INFO - Searching documents with query: 'Please tell me about Alice'
+2025-08-08 16:44:27,131 - RAGService - INFO - Search completed, found 5 results
+2025-08-08 16:44:37,198 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
+2025-08-08 16:44:37,409 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 16:44:37,410 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 16:44:37,410 - __main__ - INFO - Query validation successful: 'What happened in the rabbit hole'
-2025-08-08 16:44:37,410 - ragcontrol - INFO - Searching documents with query: 'What happened in the rabbit hole'
-2025-08-08 16:44:38,171 - ragcontrol - INFO - Search completed, found 5 results
-2025-08-08 16:44:53,972 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
-2025-08-08 16:44:54,206 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 16:44:54,206 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 16:44:54,206 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 16:44:54,311 - ragcontrol - INFO - Found 1 documents in database
-2025-08-08 16:45:04,583 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
-2025-08-08 16:45:04,800 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 16:45:04,800 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 16:44:37,410 - RAGService - INFO - Searching documents with query: 'What happened in the rabbit hole'
+2025-08-08 16:44:38,171 - RAGService - INFO - Search completed, found 5 results
+2025-08-08 16:44:53,972 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
+2025-08-08 16:44:54,206 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 16:44:54,206 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 16:44:54,206 - RAGService - INFO - Listing all documents in database
+2025-08-08 16:44:54,311 - RAGService - INFO - Found 1 documents in database
+2025-08-08 16:45:04,583 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
+2025-08-08 16:45:04,800 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 16:45:04,800 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 16:45:04,800 - __main__ - INFO - Query validation successful: 'Tell me about the Queen'
-2025-08-08 16:45:04,801 - ragcontrol - INFO - Searching documents with query: 'Tell me about the Queen'
-2025-08-08 16:45:04,801 - ragcontrol - ERROR - Failed to search documents: Expected where operator to be one of $gt, $gte, $lt, $lte, $ne, $eq, $in, $nin, got $contains in query.
+2025-08-08 16:45:04,801 - RAGService - INFO - Searching documents with query: 'Tell me about the Queen'
+2025-08-08 16:45:04,801 - RAGService - ERROR - Failed to search documents: Expected where operator to be one of $gt, $gte, $lt, $lte, $ne, $eq, $in, $nin, got $contains in query.
 2025-08-08 16:45:04,801 - __main__ - ERROR - Failed to search documents: Expected where operator to be one of $gt, $gte, $lt, $lte, $ne, $eq, $in, $nin, got $contains in query.
-2025-08-08 16:48:30,049 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
-2025-08-08 16:48:30,264 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 16:48:30,264 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 16:48:30,049 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
+2025-08-08 16:48:30,264 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 16:48:30,264 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 16:48:30,264 - __main__ - INFO - Query validation successful: 'Tell me about the Queen'
-2025-08-08 16:48:30,264 - ragcontrol - INFO - Searching documents with query: 'Tell me about the Queen'
-2025-08-08 16:48:31,033 - ragcontrol - INFO - Search completed, found 5 results
-2025-08-08 21:50:55,997 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 16:48:30,264 - RAGService - INFO - Searching documents with query: 'Tell me about the Queen'
+2025-08-08 16:48:31,033 - RAGService - INFO - Search completed, found 5 results
+2025-08-08 21:50:55,997 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 21:50:57,114 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 21:50:57,119 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 21:50:57,119 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 21:50:57,119 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 21:50:57,120 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 21:50:57,120 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 21:50:57,146 - ragcontrol - ERROR - Failed to list documents: object of type 'int' has no len()
+2025-08-08 21:50:57,119 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 21:50:57,120 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 21:50:57,120 - RAGService - INFO - Listing all documents in database
+2025-08-08 21:50:57,146 - RAGService - ERROR - Failed to list documents: object of type 'int' has no len()
 2025-08-08 21:50:57,146 - __main__ - ERROR - Failed to list documents: object of type 'int' has no len()
-2025-08-08 21:58:26,404 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 21:58:26,404 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 21:58:27,197 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 21:58:27,205 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 21:58:27,205 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 21:58:27,206 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 21:58:27,206 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 21:58:27,207 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 21:58:27,264 - ragcontrol - ERROR - Failed to list documents: object of type 'int' has no len()
+2025-08-08 21:58:27,206 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 21:58:27,206 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 21:58:27,207 - RAGService - INFO - Listing all documents in database
+2025-08-08 21:58:27,264 - RAGService - ERROR - Failed to list documents: object of type 'int' has no len()
 2025-08-08 21:58:27,264 - __main__ - ERROR - Failed to list documents: object of type 'int' has no len()
-2025-08-08 21:59:05,184 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 21:59:05,184 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 21:59:05,659 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 21:59:05,668 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 21:59:05,668 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 21:59:05,669 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 21:59:05,669 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 21:59:05,669 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 21:59:05,704 - ragcontrol - ERROR - Failed to list documents: object of type 'int' has no len()
+2025-08-08 21:59:05,669 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 21:59:05,669 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 21:59:05,669 - RAGService - INFO - Listing all documents in database
+2025-08-08 21:59:05,704 - RAGService - ERROR - Failed to list documents: object of type 'int' has no len()
 2025-08-08 21:59:05,704 - __main__ - ERROR - Failed to list documents: object of type 'int' has no len()
-2025-08-08 21:59:46,814 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 21:59:46,814 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 21:59:47,248 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 21:59:47,252 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 21:59:47,252 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 21:59:47,253 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 21:59:47,253 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 21:59:47,253 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 21:59:47,286 - ragcontrol - ERROR - Failed to list documents: object of type 'int' has no len()
+2025-08-08 21:59:47,253 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 21:59:47,253 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 21:59:47,253 - RAGService - INFO - Listing all documents in database
+2025-08-08 21:59:47,286 - RAGService - ERROR - Failed to list documents: object of type 'int' has no len()
 2025-08-08 21:59:47,286 - __main__ - ERROR - Failed to list documents: object of type 'int' has no len()
-2025-08-08 22:00:14,439 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:00:14,439 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:00:14,938 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:00:14,943 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:00:14,945 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:00:14,949 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:00:14,950 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:00:14,951 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:00:14,986 - ragcontrol - ERROR - Error calling collection.get(): object of type 'int' has no len()
-2025-08-08 22:00:47,881 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:00:14,949 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:00:14,950 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:00:14,951 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:00:14,986 - RAGService - ERROR - Error calling collection.get(): object of type 'int' has no len()
+2025-08-08 22:00:47,881 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:00:48,313 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:00:48,318 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:00:48,319 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:00:48,320 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:00:48,321 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:00:48,322 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:00:48,369 - ragcontrol - ERROR - Error calling collection methods: object of type 'int' has no len()
-2025-08-08 22:01:15,444 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:00:48,320 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:00:48,321 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:00:48,322 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:00:48,369 - RAGService - ERROR - Error calling collection methods: object of type 'int' has no len()
+2025-08-08 22:01:15,444 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:01:15,934 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:01:15,938 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:01:15,938 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:01:15,939 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:01:15,940 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:01:15,940 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:01:15,979 - ragcontrol - ERROR - Error calling collection methods: object of type 'int' has no len()
-2025-08-08 22:01:30,669 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:01:15,939 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:01:15,940 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:01:15,940 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:01:15,979 - RAGService - ERROR - Error calling collection methods: object of type 'int' has no len()
+2025-08-08 22:01:30,669 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:01:31,346 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:01:31,392 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:01:31,393 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:01:31,393 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:01:31,393 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:01:31,405 - ragcontrol - INFO - Successfully called collection.get() with limit
-2025-08-08 22:01:31,409 - ragcontrol - INFO - Successfully called collection.get() for all results
-2025-08-08 22:01:31,409 - ragcontrol - INFO - Results type: <class 'dict'>
-2025-08-08 22:01:31,409 - ragcontrol - INFO - Results keys: ['ids', 'embeddings', 'metadatas', 'documents', 'uris', 'data']
-2025-08-08 22:01:31,410 - ragcontrol - INFO - Key 'ids' type: <class 'list'>, value: []
-2025-08-08 22:01:31,410 - ragcontrol - INFO - Key 'embeddings' type: <class 'NoneType'>, value: None
-2025-08-08 22:01:31,410 - ragcontrol - INFO - Key 'metadatas' type: <class 'list'>, value: []
-2025-08-08 22:01:31,410 - ragcontrol - INFO - Key 'documents' type: <class 'list'>, value: []
-2025-08-08 22:01:31,412 - ragcontrol - INFO - Key 'uris' type: <class 'NoneType'>, value: None
-2025-08-08 22:01:31,412 - ragcontrol - INFO - Key 'data' type: <class 'NoneType'>, value: None
-2025-08-08 22:01:31,412 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:01:39,129 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:01:31,393 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:01:31,393 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:01:31,393 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:01:31,405 - RAGService - INFO - Successfully called collection.get() with limit
+2025-08-08 22:01:31,409 - RAGService - INFO - Successfully called collection.get() for all results
+2025-08-08 22:01:31,409 - RAGService - INFO - Results type: <class 'dict'>
+2025-08-08 22:01:31,409 - RAGService - INFO - Results keys: ['ids', 'embeddings', 'metadatas', 'documents', 'uris', 'data']
+2025-08-08 22:01:31,410 - RAGService - INFO - Key 'ids' type: <class 'list'>, value: []
+2025-08-08 22:01:31,410 - RAGService - INFO - Key 'embeddings' type: <class 'NoneType'>, value: None
+2025-08-08 22:01:31,410 - RAGService - INFO - Key 'metadatas' type: <class 'list'>, value: []
+2025-08-08 22:01:31,410 - RAGService - INFO - Key 'documents' type: <class 'list'>, value: []
+2025-08-08 22:01:31,412 - RAGService - INFO - Key 'uris' type: <class 'NoneType'>, value: None
+2025-08-08 22:01:31,412 - RAGService - INFO - Key 'data' type: <class 'NoneType'>, value: None
+2025-08-08 22:01:31,412 - RAGService - INFO - Collection is empty
+2025-08-08 22:01:39,129 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:01:39,664 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:01:39,670 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:01:39,670 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:01:39,671 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:01:39,671 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:01:39,719 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:01:46,819 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:01:39,671 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:01:39,671 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:01:39,719 - RAGService - INFO - Collection is empty
+2025-08-08 22:01:46,819 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:01:47,252 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:01:47,261 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:01:47,261 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:01:47,262 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:01:47,262 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:01:47,262 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:01:47,304 - ragcontrol - INFO - Successfully called collection.get() with limit
-2025-08-08 22:01:47,311 - ragcontrol - INFO - Successfully called collection.get() for all results
-2025-08-08 22:01:47,312 - ragcontrol - INFO - Results type: <class 'dict'>
-2025-08-08 22:01:47,312 - ragcontrol - INFO - Results keys: ['ids', 'embeddings', 'metadatas', 'documents', 'uris', 'data']
-2025-08-08 22:01:47,312 - ragcontrol - INFO - Key 'ids' type: <class 'list'>, value: []
-2025-08-08 22:01:47,313 - ragcontrol - INFO - Key 'embeddings' type: <class 'NoneType'>, value: None
-2025-08-08 22:01:47,313 - ragcontrol - INFO - Key 'metadatas' type: <class 'list'>, value: []
-2025-08-08 22:01:47,313 - ragcontrol - INFO - Key 'documents' type: <class 'list'>, value: []
-2025-08-08 22:01:47,313 - ragcontrol - INFO - Key 'uris' type: <class 'NoneType'>, value: None
-2025-08-08 22:01:47,313 - ragcontrol - INFO - Key 'data' type: <class 'NoneType'>, value: None
-2025-08-08 22:01:47,313 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:02:10,339 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:01:47,262 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:01:47,262 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:01:47,262 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:01:47,304 - RAGService - INFO - Successfully called collection.get() with limit
+2025-08-08 22:01:47,311 - RAGService - INFO - Successfully called collection.get() for all results
+2025-08-08 22:01:47,312 - RAGService - INFO - Results type: <class 'dict'>
+2025-08-08 22:01:47,312 - RAGService - INFO - Results keys: ['ids', 'embeddings', 'metadatas', 'documents', 'uris', 'data']
+2025-08-08 22:01:47,312 - RAGService - INFO - Key 'ids' type: <class 'list'>, value: []
+2025-08-08 22:01:47,313 - RAGService - INFO - Key 'embeddings' type: <class 'NoneType'>, value: None
+2025-08-08 22:01:47,313 - RAGService - INFO - Key 'metadatas' type: <class 'list'>, value: []
+2025-08-08 22:01:47,313 - RAGService - INFO - Key 'documents' type: <class 'list'>, value: []
+2025-08-08 22:01:47,313 - RAGService - INFO - Key 'uris' type: <class 'NoneType'>, value: None
+2025-08-08 22:01:47,313 - RAGService - INFO - Key 'data' type: <class 'NoneType'>, value: None
+2025-08-08 22:01:47,313 - RAGService - INFO - Collection is empty
+2025-08-08 22:02:10,339 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:02:10,765 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:02:10,774 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:02:10,774 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:02:10,775 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:02:10,775 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:02:10,775 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:02:10,821 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:02:21,669 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:02:10,775 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:02:10,775 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:02:10,775 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:02:10,821 - RAGService - INFO - Collection is empty
+2025-08-08 22:02:21,669 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:02:22,116 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:02:22,122 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:02:22,123 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:02:22,124 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:02:22,125 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:02:22,169 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:02:55,650 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:02:22,124 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:02:22,125 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:02:22,169 - RAGService - INFO - Collection is empty
+2025-08-08 22:02:55,650 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:02:56,137 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:02:56,147 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:02:56,148 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:02:56,150 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:02:56,151 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:02:56,151 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:02:56,191 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:02:59,153 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:02:56,150 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:02:56,151 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:02:56,151 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:02:56,191 - RAGService - INFO - Collection is empty
+2025-08-08 22:02:59,153 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:02:59,644 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:02:59,653 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:02:59,654 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:02:59,654 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:02:59,655 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:02:59,705 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:04:04,249 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:02:59,654 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:02:59,655 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:02:59,705 - RAGService - INFO - Collection is empty
+2025-08-08 22:04:04,249 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:04:04,605 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:04:04,610 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:04:04,611 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:04:04,612 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:04:04,612 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:04:04,612 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:04:04,644 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:04:13,168 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:04:04,612 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:04:04,612 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:04:04,612 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:04:04,644 - RAGService - INFO - Collection is empty
+2025-08-08 22:04:13,168 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:04:13,482 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:04:13,487 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:04:13,488 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:04:13,489 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:04:13,489 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:04:13,520 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:04:18,822 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:04:13,489 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:04:13,489 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:04:13,520 - RAGService - INFO - Collection is empty
+2025-08-08 22:04:18,822 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:04:19,061 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:04:19,065 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:04:19,065 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:04:19,066 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:04:19,066 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:04:19,066 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:04:19,095 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:04:53,533 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:04:19,066 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:04:19,066 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:04:19,066 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:04:19,095 - RAGService - INFO - Collection is empty
+2025-08-08 22:04:53,533 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:04:53,820 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:04:53,825 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:04:53,825 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:04:53,826 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:04:53,826 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:04:53,826 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:04:53,852 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:04:55,378 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:04:53,826 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:04:53,826 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:04:53,826 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:04:53,852 - RAGService - INFO - Collection is empty
+2025-08-08 22:04:55,378 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:04:55,656 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:04:55,664 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:04:55,664 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:04:55,666 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:04:55,666 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:04:55,713 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:11:39,743 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:04:55,666 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:04:55,666 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:04:55,713 - RAGService - INFO - Collection is empty
+2025-08-08 22:11:39,743 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:11:40,462 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:11:40,471 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:11:40,471 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:11:40,471 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:11:40,472 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:11:40,472 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:11:40,524 - ragcontrol - INFO - Collection is empty
-2025-08-08 22:30:35,571 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:11:40,471 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:11:40,472 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:11:40,472 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:11:40,524 - RAGService - INFO - Collection is empty
+2025-08-08 22:30:35,571 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:30:36,201 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:30:45,341 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2025-08-08 22:30:53,653 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:30:53,655 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:30:53,656 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:30:53,656 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:30:53,658 - ragcontrol - INFO - Listing all documents in database
+2025-08-08 22:30:53,656 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:30:53,656 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:30:53,658 - RAGService - INFO - Listing all documents in database
 2025-08-08 22:30:53,721 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:30:53,819 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:30:53,820 - ragcontrol - INFO - Found 1 documents in database
-2025-08-08 22:31:11,501 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:30:53,820 - RAGService - INFO - Found 1 documents in database
+2025-08-08 22:31:11,501 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:31:12,189 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:31:23,421 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2025-08-08 22:31:32,135 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:31:32,136 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:31:32,138 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:31:32,139 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:31:32,138 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:31:32,139 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:31:32,220 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:31:32,318 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:31:32,322 - ragcontrol - INFO - Database stats: {'total_chunks': 226, 'unique_documents': 1, 'total_content_size_bytes': 208237, 'database_path': './chroma_db', 'collection_name': 'documents'}
-2025-08-08 22:31:55,103 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:31:32,322 - RAGService - INFO - Database stats: {'total_chunks': 226, 'unique_documents': 1, 'total_content_size_bytes': 208237, 'database_path': './chroma_db', 'collection_name': 'documents'}
+2025-08-08 22:31:55,103 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:31:55,748 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:32:04,146 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2025-08-08 22:32:11,961 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:32:11,963 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:32:11,965 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:32:11,966 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:32:11,965 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:32:11,966 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:32:11,967 - __main__ - INFO - Query validation successful: 'Alice in Wonderland'
-2025-08-08 22:32:11,967 - ragcontrol - INFO - Searching documents with query: 'Alice in Wonderland'
+2025-08-08 22:32:11,967 - RAGService - INFO - Searching documents with query: 'Alice in Wonderland'
 2025-08-08 22:32:12,490 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:32:12,491 - ragcontrol - INFO - Search completed, found 5 results
-2025-08-08 22:33:39,960 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:32:12,491 - RAGService - INFO - Search completed, found 5 results
+2025-08-08 22:33:39,960 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:33:40,920 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:33:50,280 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2025-08-08 22:33:58,196 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:33:58,198 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:33:58,200 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:33:58,202 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:33:58,203 - ragcontrol - INFO - Listing all documents in database
+2025-08-08 22:33:58,200 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:33:58,202 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:33:58,203 - RAGService - INFO - Listing all documents in database
 2025-08-08 22:33:58,263 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:33:58,344 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:33:58,346 - ragcontrol - INFO - Found 1 documents in database
-2025-08-08 22:35:42,356 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:33:58,346 - RAGService - INFO - Found 1 documents in database
+2025-08-08 22:35:42,356 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:35:42,930 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:35:46,986 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2025-08-08 22:35:54,459 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:35:54,459 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:35:54,460 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:35:54,460 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:35:54,460 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:35:54,460 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:35:54,460 - __main__ - INFO - Query validation successful: 'Tell me about the Queen'
-2025-08-08 22:35:54,460 - ragcontrol - INFO - Searching documents with query: 'Tell me about the Queen'
+2025-08-08 22:35:54,460 - RAGService - INFO - Searching documents with query: 'Tell me about the Queen'
 2025-08-08 22:35:54,723 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:35:54,723 - ragcontrol - INFO - Search completed, found 5 results
+2025-08-08 22:35:54,723 - RAGService - INFO - Search completed, found 5 results

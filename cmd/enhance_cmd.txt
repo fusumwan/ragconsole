@@ -1,0 +1,18 @@
+You are RAG AI and fastapi expert,  please study application_design.txt and ragcontrolservice_design.txt and all related source code, and then to enhance the RAG AI program to support user to choose the embedding method. The system has two embedding methods, and the system design is allowed to extern adding for embedding method in future. Below **Rag study commands** are sample of command.
+
+**Two embedding methods**
+
+Sentence-Transformers
+OpenAIEmbeddings
+
+
+**Rag study commands***
+
+python ragstudy.py Sentence-Transformers md alice_in_wonderland.md
+
+
+python ragstudy.py OpenAIEmbeddings md alice_in_wonderland.md
+
+
+
+Attached application_design.txt include directory structure and all source code.

@@ -1,0 +1,46 @@
+2025-08-14 17:21:46 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-14 17:21:52 - chromadb.api.segment - INFO - Collection documents_Sentence_Transformers is not created.
+2025-08-14 17:21:52 - ragcontrolservice - INFO - RAGControlService initialized at './chroma_db' using collection 'documents_Sentence_Transformers' with embedding 'Sentence-Transformers'.
+2025-08-14 17:21:52 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
+2025-08-14 17:21:52 - __main__ - INFO - Starting document deletion process: alice_in_wonderland.md
+2025-08-14 17:21:52 - __main__ - INFO - File path validated successfully: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 17:21:52 - __main__ - INFO - Checking if document exists in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 17:21:52 - ragcontrolservice - INFO - Listing documents in collection 'documents_Sentence_Transformers' (embedding: Sentence-Transformers)
+2025-08-14 17:21:53 - ragcontrolservice - INFO - Found 1 documents in collection
+2025-08-14 17:21:53 - __main__ - INFO - Document found in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 17:21:53 - __main__ - INFO - Document found - ID: doc_ed1f8cb979d27a8ec5d97a9a59209eca, Type: md, Chunks: 226
+2025-08-14 17:22:06 - __main__ - INFO - Document deletion cancelled by user: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 22:38:13 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-08-14 22:38:44 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-14 22:38:51 - chromadb.api.segment - INFO - Collection documents_Sentence_Transformers is not created.
+2025-08-14 22:38:51 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-08-14 22:38:51 - ragcontrolservice - INFO - RAGControlService initialized at './chroma_db' using collection 'documents_Sentence_Transformers' with embedding 'Sentence-Transformers'.
+2025-08-14 22:38:51 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
+2025-08-14 22:38:51 - __main__ - INFO - Starting document deletion process: alice_in_wonderland.md
+2025-08-14 22:38:51 - __main__ - INFO - File path validated successfully: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 22:38:51 - __main__ - INFO - Checking if document exists in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 22:38:51 - ragcontrolservice - INFO - Listing documents in collection 'documents_Sentence_Transformers' (embedding: Sentence-Transformers)
+2025-08-14 22:38:51 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2025-08-14 22:38:51 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2025-08-14 22:38:51 - ragcontrolservice - INFO - Found 1 documents in collection
+2025-08-14 22:38:51 - __main__ - INFO - Document found in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 22:38:51 - __main__ - INFO - Document found - ID: doc_ed1f8cb979d27a8ec5d97a9a59209eca, Type: md, Chunks: 226
+2025-08-14 22:41:55 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-08-14 22:41:58 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-14 22:42:05 - chromadb.api.segment - INFO - Collection documents_Sentence_Transformers is not created.
+2025-08-14 22:42:05 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-08-14 22:42:05 - ragcontrolservice - INFO - RAGControlService initialized at './chroma_db' using collection 'documents_Sentence_Transformers' with embedding 'Sentence-Transformers'.
+2025-08-14 22:42:05 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
+2025-08-14 22:42:05 - __main__ - INFO - Starting document deletion process: alice_in_wonderland.md
+2025-08-14 22:42:05 - __main__ - INFO - File path validated successfully: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 22:42:05 - __main__ - INFO - Checking if document exists in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 22:42:05 - ragcontrolservice - INFO - Listing documents in collection 'documents_Sentence_Transformers' (embedding: Sentence-Transformers)
+2025-08-14 22:42:05 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2025-08-14 22:42:05 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2025-08-14 22:42:05 - ragcontrolservice - INFO - Found 1 documents in collection
+2025-08-14 22:42:05 - __main__ - INFO - Document found in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 22:42:05 - __main__ - INFO - Document found - ID: doc_ed1f8cb979d27a8ec5d97a9a59209eca, Type: md, Chunks: 226
+2025-08-14 22:42:07 - ragcontrolservice - INFO - Attempting to delete document by file path: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-14 22:42:08 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionDeleteEvent: capture() takes 1 positional argument but 3 were given
+2025-08-14 22:42:08 - ragcontrolservice - INFO - Successfully deleted document /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md with 226 chunks
+2025-08-14 22:42:08 - __main__ - INFO - Document successfully deleted: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md

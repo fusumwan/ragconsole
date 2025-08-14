@@ -1,53 +1,53 @@
-2025-08-08 17:09:38 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
+2025-08-08 17:09:38 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
 2025-08-08 17:09:38 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
 2025-08-08 17:09:38 - __main__ - INFO - Listing all documents in database
-2025-08-08 17:09:38 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 17:09:38 - ragcontrol - INFO - Found 1 documents in database
+2025-08-08 17:09:38 - RAGService - INFO - Listing all documents in database
+2025-08-08 17:09:38 - RAGService - INFO - Found 1 documents in database
 2025-08-08 17:09:38 - __main__ - INFO - Successfully listed 1 documents
-2025-08-08 17:09:49 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
+2025-08-08 17:09:49 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
 2025-08-08 17:09:49 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
 2025-08-08 17:09:49 - __main__ - INFO - Starting document deletion process: alice_in_wonderland.md
 2025-08-08 17:09:49 - __main__ - INFO - File path validated successfully: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
 2025-08-08 17:09:49 - __main__ - INFO - Checking if document exists in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
-2025-08-08 17:09:49 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 17:09:49 - ragcontrol - INFO - Found 1 documents in database
+2025-08-08 17:09:49 - RAGService - INFO - Listing all documents in database
+2025-08-08 17:09:49 - RAGService - INFO - Found 1 documents in database
 2025-08-08 17:09:49 - __main__ - INFO - Document not found in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
-2025-08-08 17:09:56 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
+2025-08-08 17:09:56 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
 2025-08-08 17:09:56 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
 2025-08-08 17:09:56 - __main__ - INFO - Retrieving database statistics
-2025-08-08 17:09:56 - ragcontrol - INFO - Database stats: {'total_chunks': 226, 'unique_documents': 1, 'total_content_size_bytes': 208237, 'database_path': './chroma_db', 'collection_name': 'documents'}
+2025-08-08 17:09:56 - RAGService - INFO - Database stats: {'total_chunks': 226, 'unique_documents': 1, 'total_content_size_bytes': 208237, 'database_path': './chroma_db', 'collection_name': 'documents'}
 2025-08-08 17:09:56 - __main__ - INFO - Database stats retrieved successfully
-2025-08-08 17:10:51 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
+2025-08-08 17:10:51 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
 2025-08-08 17:10:51 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
 2025-08-08 17:10:51 - __main__ - INFO - Starting document deletion process: alice_in_wonderland.md
 2025-08-08 17:10:51 - __main__ - INFO - File path validated successfully: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
 2025-08-08 17:10:51 - __main__ - INFO - Checking if document exists in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
-2025-08-08 17:10:51 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 17:10:52 - ragcontrol - INFO - Found 1 documents in database
+2025-08-08 17:10:51 - RAGService - INFO - Listing all documents in database
+2025-08-08 17:10:52 - RAGService - INFO - Found 1 documents in database
 2025-08-08 17:10:52 - __main__ - INFO - Document found in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
 2025-08-08 17:10:52 - __main__ - INFO - Document found - ID: doc_ed1f8cb979d27a8ec5d97a9a59209eca, Type: md, Chunks: 226
-2025-08-08 17:11:04 - ragcontrol - INFO - Attempting to delete document by file path: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
-2025-08-08 17:11:04 - ragcontrol - INFO - No exact path match found, trying filename match: alice_in_wonderland.md
-2025-08-08 17:11:04 - ragcontrol - INFO - Found 226 chunks by filename match
-2025-08-08 17:11:04 - ragcontrol - INFO - Successfully deleted document /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md with 226 chunks
+2025-08-08 17:11:04 - RAGService - INFO - Attempting to delete document by file path: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
+2025-08-08 17:11:04 - RAGService - INFO - No exact path match found, trying filename match: alice_in_wonderland.md
+2025-08-08 17:11:04 - RAGService - INFO - Found 226 chunks by filename match
+2025-08-08 17:11:04 - RAGService - INFO - Successfully deleted document /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md with 226 chunks
 2025-08-08 17:11:04 - __main__ - INFO - Document successfully deleted: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
-2025-08-08 17:11:12 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
+2025-08-08 17:11:12 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
 2025-08-08 17:11:12 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
 2025-08-08 17:11:12 - __main__ - INFO - Listing all documents in database
-2025-08-08 17:11:12 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 17:11:12 - ragcontrol - INFO - Found 0 documents in database
+2025-08-08 17:11:12 - RAGService - INFO - Listing all documents in database
+2025-08-08 17:11:12 - RAGService - INFO - Found 0 documents in database
 2025-08-08 17:11:12 - __main__ - INFO - Successfully listed 0 documents
-2025-08-08 17:11:24 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
+2025-08-08 17:11:24 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
 2025-08-08 17:11:24 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
 2025-08-08 17:11:24 - __main__ - INFO - Retrieving database statistics
-2025-08-08 17:11:24 - ragcontrol - INFO - Database stats: {'total_chunks': 0, 'unique_documents': 0, 'total_content_size_bytes': 0, 'database_path': './chroma_db', 'collection_name': 'documents'}
+2025-08-08 17:11:24 - RAGService - INFO - Database stats: {'total_chunks': 0, 'unique_documents': 0, 'total_content_size_bytes': 0, 'database_path': './chroma_db', 'collection_name': 'documents'}
 2025-08-08 17:11:24 - __main__ - INFO - Database stats retrieved successfully
-2025-08-08 17:11:38 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
+2025-08-08 17:11:38 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
 2025-08-08 17:11:38 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
 2025-08-08 17:11:38 - __main__ - INFO - Starting document deletion process: non_existent_file.md
 2025-08-08 17:11:38 - __main__ - ERROR - File path validation failed for non_existent_file.md: File not found: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/non_existent_file.md
 2025-08-08 17:11:38 - __main__ - ERROR - Failed to delete document non_existent_file.md: File not found: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/non_existent_file.md
-2025-08-08 17:11:49 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
+2025-08-08 17:11:49 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
 2025-08-08 17:11:49 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
 2025-08-08 17:11:49 - __main__ - INFO - Starting document deletion process: requirements.txt
 2025-08-08 17:11:49 - __main__ - ERROR - File path validation failed for requirements.txt: Unsupported file type: .txt. Only .md and .pdf files are supported.
@@ -55,23 +55,23 @@
 2025-08-08 22:20:54 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:20:54 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:20:54 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:20:54 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
+2025-08-08 22:20:54 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
 2025-08-08 22:20:54 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
 2025-08-08 22:20:54 - __main__ - INFO - Starting document deletion process: alice_in_wonderland.md
 2025-08-08 22:20:54 - __main__ - INFO - File path validated successfully: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
 2025-08-08 22:20:54 - __main__ - INFO - Checking if document exists in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
-2025-08-08 22:20:54 - ragcontrol - INFO - Listing all documents in database
-2025-08-08 22:20:54 - ragcontrol - INFO - Collection is empty
+2025-08-08 22:20:54 - RAGService - INFO - Listing all documents in database
+2025-08-08 22:20:54 - RAGService - INFO - Collection is empty
 2025-08-08 22:20:54 - __main__ - INFO - Document not found in database: /Users/sumwanfu/Projects/python-workspace/python-console/ragconsole/ragconsole/alice_in_wonderland.md
 2025-08-08 22:34:18 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:34:29 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2025-08-08 22:34:37 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:34:37 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:34:37 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
+2025-08-08 22:34:37 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
 2025-08-08 22:34:37 - __main__ - INFO - RAGDelete initialized successfully with database at ./chroma_db
 2025-08-08 22:34:37 - __main__ - INFO - Listing all documents in database
-2025-08-08 22:34:37 - ragcontrol - INFO - Listing all documents in database
+2025-08-08 22:34:37 - RAGService - INFO - Listing all documents in database
 2025-08-08 22:34:37 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:34:37 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:34:37 - ragcontrol - INFO - Found 1 documents in database
+2025-08-08 22:34:37 - RAGService - INFO - Found 1 documents in database
 2025-08-08 22:34:37 - __main__ - INFO - Successfully listed 1 documents

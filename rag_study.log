@@ -1,138 +1,138 @@
-2025-08-08 16:39:38,927 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
-2025-08-08 16:39:40,682 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 16:39:40,682 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 16:39:38,927 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
+2025-08-08 16:39:40,682 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 16:39:40,682 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 16:39:40,683 - __main__ - INFO - File validation successful: alice_in_wonderland.md
-2025-08-08 16:39:40,683 - ragcontrol - INFO - Starting document study: alice_in_wonderland.md (type: md)
-2025-08-08 16:39:40,689 - ragcontrol - INFO - Successfully read markdown file: alice_in_wonderland.md
-2025-08-08 16:39:40,713 - ragcontrol - INFO - Created 226 chunks from text
+2025-08-08 16:39:40,683 - RAGService - INFO - Starting document study: alice_in_wonderland.md (type: md)
+2025-08-08 16:39:40,689 - RAGService - INFO - Successfully read markdown file: alice_in_wonderland.md
+2025-08-08 16:39:40,713 - RAGService - INFO - Created 226 chunks from text
 2025-08-08 16:39:44,439 - httpx - INFO - HTTP Request: GET https://chroma-onnx-models.s3.amazonaws.com/all-MiniLM-L6-v2/onnx.tar.gz "HTTP/1.1 200 OK"
-2025-08-08 16:42:35,330 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
-2025-08-08 16:42:35,550 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 16:42:35,550 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 16:42:35,330 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
+2025-08-08 16:42:35,550 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 16:42:35,550 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 16:42:35,550 - __main__ - INFO - File validation successful: alice_in_wonderland.md
-2025-08-08 16:42:35,551 - ragcontrol - INFO - Starting document study: alice_in_wonderland.md (type: md)
-2025-08-08 16:42:35,555 - ragcontrol - INFO - Successfully read markdown file: alice_in_wonderland.md
-2025-08-08 16:42:35,574 - ragcontrol - INFO - Created 226 chunks from text
-2025-08-08 16:42:52,117 - ragcontrol - INFO - Successfully stored document alice_in_wonderland.md with 226 chunks
-2025-08-08 16:42:52,142 - ragcontrol - INFO - Database stats: {'total_chunks': 226, 'unique_documents': 1, 'total_content_size_bytes': 208237, 'database_path': './chroma_db', 'collection_name': 'documents'}
-2025-08-08 22:21:31,909 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 16:42:35,551 - RAGService - INFO - Starting document study: alice_in_wonderland.md (type: md)
+2025-08-08 16:42:35,555 - RAGService - INFO - Successfully read markdown file: alice_in_wonderland.md
+2025-08-08 16:42:35,574 - RAGService - INFO - Created 226 chunks from text
+2025-08-08 16:42:52,117 - RAGService - INFO - Successfully stored document alice_in_wonderland.md with 226 chunks
+2025-08-08 16:42:52,142 - RAGService - INFO - Database stats: {'total_chunks': 226, 'unique_documents': 1, 'total_content_size_bytes': 208237, 'database_path': './chroma_db', 'collection_name': 'documents'}
+2025-08-08 22:21:31,909 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:21:32,133 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:21:32,135 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:21:32,135 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:21:32,136 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:21:32,136 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:21:32,136 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:21:32,136 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:21:32,137 - __main__ - INFO - File validation successful: alice_in_wonderland.md
-2025-08-08 22:21:32,137 - ragcontrol - INFO - Starting document study: alice_in_wonderland.md (type: md)
-2025-08-08 22:21:32,161 - ragcontrol - INFO - Successfully read markdown file: alice_in_wonderland.md
-2025-08-08 22:21:32,184 - ragcontrol - INFO - Created 226 chunks from text
-2025-08-08 22:21:35,472 - ragcontrol - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
+2025-08-08 22:21:32,137 - RAGService - INFO - Starting document study: alice_in_wonderland.md (type: md)
+2025-08-08 22:21:32,161 - RAGService - INFO - Successfully read markdown file: alice_in_wonderland.md
+2025-08-08 22:21:32,184 - RAGService - INFO - Created 226 chunks from text
+2025-08-08 22:21:35,472 - RAGService - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
 2025-08-08 22:21:35,472 - __main__ - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
-2025-08-08 22:22:52,804 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:22:52,804 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:22:53,549 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:22:53,560 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:22:53,561 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:22:53,563 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:22:53,564 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:22:53,563 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:22:53,564 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:22:53,565 - __main__ - INFO - File validation successful: alice_in_wonderland.md
-2025-08-08 22:22:53,566 - ragcontrol - INFO - Starting document study: alice_in_wonderland.md (type: md)
-2025-08-08 22:22:53,670 - ragcontrol - INFO - Successfully read markdown file: alice_in_wonderland.md
-2025-08-08 22:22:53,739 - ragcontrol - INFO - Created 226 chunks from text
-2025-08-08 22:22:58,968 - ragcontrol - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
+2025-08-08 22:22:53,566 - RAGService - INFO - Starting document study: alice_in_wonderland.md (type: md)
+2025-08-08 22:22:53,670 - RAGService - INFO - Successfully read markdown file: alice_in_wonderland.md
+2025-08-08 22:22:53,739 - RAGService - INFO - Created 226 chunks from text
+2025-08-08 22:22:58,968 - RAGService - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
 2025-08-08 22:22:58,969 - __main__ - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
-2025-08-08 22:23:49,546 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:23:49,546 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:23:50,141 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:23:50,149 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:23:50,151 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:23:50,152 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:23:50,153 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:23:50,152 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:23:50,153 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:23:50,155 - __main__ - INFO - File validation successful: alice_in_wonderland.md
-2025-08-08 22:23:50,160 - ragcontrol - INFO - Starting document study: alice_in_wonderland.md (type: md)
-2025-08-08 22:23:50,231 - ragcontrol - INFO - Successfully read markdown file: alice_in_wonderland.md
-2025-08-08 22:23:50,284 - ragcontrol - INFO - Created 226 chunks from text
-2025-08-08 22:23:50,289 - ragcontrol - ERROR - Failed to study document alice_in_wonderland.md: You must provide an embedding function to compute embeddings.https://docs.trychroma.com/embeddings
+2025-08-08 22:23:50,160 - RAGService - INFO - Starting document study: alice_in_wonderland.md (type: md)
+2025-08-08 22:23:50,231 - RAGService - INFO - Successfully read markdown file: alice_in_wonderland.md
+2025-08-08 22:23:50,284 - RAGService - INFO - Created 226 chunks from text
+2025-08-08 22:23:50,289 - RAGService - ERROR - Failed to study document alice_in_wonderland.md: You must provide an embedding function to compute embeddings.https://docs.trychroma.com/embeddings
 2025-08-08 22:23:50,290 - __main__ - ERROR - Failed to study document alice_in_wonderland.md: You must provide an embedding function to compute embeddings.https://docs.trychroma.com/embeddings
-2025-08-08 22:24:15,264 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:24:15,264 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:24:15,940 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:24:15,952 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:24:15,953 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:24:15,954 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:24:15,955 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:24:15,954 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:24:15,955 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:24:15,955 - __main__ - INFO - File validation successful: alice_in_wonderland.md
-2025-08-08 22:24:15,956 - ragcontrol - INFO - Starting document study: alice_in_wonderland.md (type: md)
-2025-08-08 22:24:16,018 - ragcontrol - INFO - Successfully read markdown file: alice_in_wonderland.md
-2025-08-08 22:24:16,076 - ragcontrol - INFO - Created 226 chunks from text
-2025-08-08 22:24:21,017 - ragcontrol - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
+2025-08-08 22:24:15,956 - RAGService - INFO - Starting document study: alice_in_wonderland.md (type: md)
+2025-08-08 22:24:16,018 - RAGService - INFO - Successfully read markdown file: alice_in_wonderland.md
+2025-08-08 22:24:16,076 - RAGService - INFO - Created 226 chunks from text
+2025-08-08 22:24:21,017 - RAGService - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
 2025-08-08 22:24:21,018 - __main__ - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
-2025-08-08 22:24:47,444 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:24:47,444 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:24:47,978 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:24:47,989 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:24:47,991 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:24:47,992 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:24:47,992 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:24:47,992 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:24:47,992 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:24:47,992 - __main__ - INFO - File validation successful: alice_in_wonderland.md
-2025-08-08 22:24:47,992 - ragcontrol - INFO - Starting document study: alice_in_wonderland.md (type: md)
-2025-08-08 22:24:48,072 - ragcontrol - INFO - Successfully read markdown file: alice_in_wonderland.md
-2025-08-08 22:24:48,155 - ragcontrol - INFO - Created 226 chunks from text
-2025-08-08 22:24:53,117 - ragcontrol - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
+2025-08-08 22:24:47,992 - RAGService - INFO - Starting document study: alice_in_wonderland.md (type: md)
+2025-08-08 22:24:48,072 - RAGService - INFO - Successfully read markdown file: alice_in_wonderland.md
+2025-08-08 22:24:48,155 - RAGService - INFO - Created 226 chunks from text
+2025-08-08 22:24:53,117 - RAGService - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
 2025-08-08 22:24:53,118 - __main__ - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
-2025-08-08 22:25:43,373 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:25:43,373 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:25:43,945 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:25:43,955 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:25:43,956 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:25:43,956 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:25:43,956 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:25:43,956 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:25:43,956 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:25:43,957 - __main__ - INFO - File validation successful: alice_in_wonderland.md
-2025-08-08 22:25:43,958 - ragcontrol - INFO - Starting document study: alice_in_wonderland.md (type: md)
-2025-08-08 22:25:44,019 - ragcontrol - INFO - Successfully read markdown file: alice_in_wonderland.md
-2025-08-08 22:25:44,059 - ragcontrol - INFO - Created 226 chunks from text
-2025-08-08 22:25:48,932 - ragcontrol - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
+2025-08-08 22:25:43,958 - RAGService - INFO - Starting document study: alice_in_wonderland.md (type: md)
+2025-08-08 22:25:44,019 - RAGService - INFO - Successfully read markdown file: alice_in_wonderland.md
+2025-08-08 22:25:44,059 - RAGService - INFO - Created 226 chunks from text
+2025-08-08 22:25:48,932 - RAGService - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
 2025-08-08 22:25:48,933 - __main__ - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
-2025-08-08 22:26:53,783 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:26:53,783 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:26:54,379 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:26:54,389 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:26:54,390 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:26:54,391 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:26:54,391 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:26:54,391 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:26:54,391 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:26:54,392 - __main__ - INFO - File validation successful: alice_in_wonderland.md
-2025-08-08 22:26:54,392 - ragcontrol - INFO - Starting document study: alice_in_wonderland.md (type: md)
-2025-08-08 22:26:54,444 - ragcontrol - INFO - Successfully read markdown file: alice_in_wonderland.md
-2025-08-08 22:26:54,494 - ragcontrol - INFO - Created 226 chunks from text
-2025-08-08 22:26:58,852 - ragcontrol - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
+2025-08-08 22:26:54,392 - RAGService - INFO - Starting document study: alice_in_wonderland.md (type: md)
+2025-08-08 22:26:54,444 - RAGService - INFO - Successfully read markdown file: alice_in_wonderland.md
+2025-08-08 22:26:54,494 - RAGService - INFO - Created 226 chunks from text
+2025-08-08 22:26:58,852 - RAGService - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
 2025-08-08 22:26:58,853 - __main__ - ERROR - Failed to study document alice_in_wonderland.md: [ONNXRuntimeError] : 1 : FAIL : Non-zero status code returned while running CoreML_3684475076892360890_1 node. Name:'CoreMLExecutionProvider_CoreML_3684475076892360890_1_1' Status Message: Error executing model: Error computing NN outputs.
-2025-08-08 22:27:44,940 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:27:44,940 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:27:45,545 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:28:48,218 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2025-08-08 22:29:14,170 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:29:14,171 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:29:14,172 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:29:14,172 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:29:14,172 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:29:14,172 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:29:14,173 - __main__ - INFO - File validation successful: alice_in_wonderland.md
-2025-08-08 22:29:14,173 - ragcontrol - INFO - Starting document study: alice_in_wonderland.md (type: md)
-2025-08-08 22:29:14,233 - ragcontrol - INFO - Successfully read markdown file: alice_in_wonderland.md
-2025-08-08 22:29:14,268 - ragcontrol - INFO - Created 226 chunks from text
+2025-08-08 22:29:14,173 - RAGService - INFO - Starting document study: alice_in_wonderland.md (type: md)
+2025-08-08 22:29:14,233 - RAGService - INFO - Successfully read markdown file: alice_in_wonderland.md
+2025-08-08 22:29:14,268 - RAGService - INFO - Created 226 chunks from text
 2025-08-08 22:30:00,619 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:30:00,631 - ragcontrol - INFO - Successfully stored document alice_in_wonderland.md with 226 chunks
+2025-08-08 22:30:00,631 - RAGService - INFO - Successfully stored document alice_in_wonderland.md with 226 chunks
 2025-08-08 22:30:00,639 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:30:00,668 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:30:00,670 - ragcontrol - INFO - Database stats: {'total_chunks': 226, 'unique_documents': 1, 'total_content_size_bytes': 208237, 'database_path': './chroma_db', 'collection_name': 'documents'}
-2025-08-08 22:32:37,348 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:30:00,670 - RAGService - INFO - Database stats: {'total_chunks': 226, 'unique_documents': 1, 'total_content_size_bytes': 208237, 'database_path': './chroma_db', 'collection_name': 'documents'}
+2025-08-08 22:32:37,348 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:32:38,006 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:32:47,350 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2025-08-08 22:32:55,886 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:32:55,887 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:32:55,889 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:32:55,889 - __main__ - INFO - RAGControl initialized successfully
-2025-08-08 22:32:55,889 - ragcontrol - INFO - Listing all documents in database
+2025-08-08 22:32:55,889 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:32:55,889 - __main__ - INFO - RAGService initialized successfully
+2025-08-08 22:32:55,889 - RAGService - INFO - Listing all documents in database
 2025-08-08 22:32:55,947 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:32:56,031 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:32:56,033 - ragcontrol - INFO - Found 1 documents in database
-2025-08-08 22:33:08,031 - __main__ - INFO - Initializing RAGControl with database path: ./chroma_db
+2025-08-08 22:32:56,033 - RAGService - INFO - Found 1 documents in database
+2025-08-08 22:33:08,031 - __main__ - INFO - Initializing RAGService with database path: ./chroma_db
 2025-08-08 22:33:08,694 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:33:17,491 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2025-08-08 22:33:24,885 - chromadb.api.segment - INFO - Collection documents is not created.
 2025-08-08 22:33:24,887 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:33:24,889 - ragcontrol - INFO - RAGControl initialized successfully with database at ./chroma_db
-2025-08-08 22:33:24,890 - __main__ - INFO - RAGControl initialized successfully
+2025-08-08 22:33:24,889 - RAGService - INFO - RAGService initialized successfully with database at ./chroma_db
+2025-08-08 22:33:24,890 - __main__ - INFO - RAGService initialized successfully
 2025-08-08 22:33:24,943 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
 2025-08-08 22:33:25,022 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
-2025-08-08 22:33:25,028 - ragcontrol - INFO - Database stats: {'total_chunks': 226, 'unique_documents': 1, 'total_content_size_bytes': 208237, 'database_path': './chroma_db', 'collection_name': 'documents'}
+2025-08-08 22:33:25,028 - RAGService - INFO - Database stats: {'total_chunks': 226, 'unique_documents': 1, 'total_content_size_bytes': 208237, 'database_path': './chroma_db', 'collection_name': 'documents'}
